@@ -4,13 +4,13 @@
   "author": "Mozilla",
   "version": "2.0.0",
   "devDependencies": {
-    "nunjucks": "2.0.0"
+    "nunjucks": ">= 2.0.0"
   },
   "engines": {
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "lockdown": "0.0.6"
+    "lockdown": ">= 0.0.6"
   },
   "repository": {
     "type": "git",

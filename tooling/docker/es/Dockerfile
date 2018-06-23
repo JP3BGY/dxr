@@ -1,4 +1,4 @@
-FROM elasticsearch:1.4
+FROM elasticsearch:latest
 
-RUN plugin install elasticsearch/elasticsearch-lang-javascript/2.4.1
+RUN elasticsearch-plugin install lang-javascript
 COPY elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml

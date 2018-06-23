@@ -9,10 +9,11 @@
 # sake of a good dev experience.
 
 # Ubuntu 14.04.3
-FROM ubuntu@sha256:0ca448cb174259ddb2ae6e213ebebe7590862d522fe38971e1175faedf0b6823
+FROM ubuntu:latest
 
 MAINTAINER Erik Rose <erik@mozilla.com>
 
+RUN apt update&&apt install sudo-ldap -y
 COPY set_up_ubuntu.sh /tmp/
 RUN DEBIAN_FRONTEND=noninteractive /tmp/set_up_ubuntu.sh
 
